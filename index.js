@@ -8,7 +8,7 @@ const mongoURI = process.env.MONGO_URI;
 
 const app = express();
 
-// Middleware setup
+
 app.use(
   cors({
     origin: [
