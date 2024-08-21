@@ -29,7 +29,6 @@ const run = async () => {
     await client.connect();
     const productsCollection = client.db("gadget-world").collection("products");
 
-    // Route to fetch products with filters, sorting, and pagination
     app.get("/products", async (req, res) => {
         try {
             const {
