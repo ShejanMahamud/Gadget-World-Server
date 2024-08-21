@@ -42,11 +42,11 @@ const run = async () => {
                 limit = 10,
             } = req.query;
     
-            // Convert minPrice and maxPrice to numbers for comparison
+            
             const minPriceNum = minPrice ? parseFloat(minPrice) : undefined;
             const maxPriceNum = maxPrice ? parseFloat(maxPrice) : undefined;
     
-            // Build the query object
+            
             const query = {};
     
             if (search) {
@@ -61,7 +61,7 @@ const run = async () => {
                 query.brand = brand;
             }
     
-            // Build the sort options
+            
             const sortOptions = {};
             if (sortBy) {
                 const [field, order] = sortBy.split("-");
