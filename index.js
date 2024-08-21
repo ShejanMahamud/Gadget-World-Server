@@ -24,13 +24,9 @@ const client = new MongoClient(mongoURI, {
   },
 });
 
-// Run function to connect to MongoDB and define routes
 const run = async () => {
   try {
-    // Connect to the MongoDB client
     await client.connect();
-
-    // Access the products collection
     const productsCollection = client.db("gadget-world").collection("products");
 
     // Route to fetch products with filters, sorting, and pagination
