@@ -10,7 +10,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://nestquest-web.netlify.app",
+      "https://gadget-world-client.vercel.app",
     ],
   })
 );
