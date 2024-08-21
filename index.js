@@ -95,13 +95,11 @@ const run = async () => {
                 return inRange;
             });
 
-                // Count all products (unfiltered) for pagination
+                
     const totalProducts = await productsCollection.countDocuments({});
-
-    // Count filtered products
     const totalFilteredProducts = await productsCollection.countDocuments(query);
     
-            // Respond with filtered products and total count
+            
             res.json({
                 data: filteredProducts,
                 total: totalProducts,
