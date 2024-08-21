@@ -5,7 +5,7 @@ const { MongoClient, ObjectId, ServerApiVersion } = require("mongodb");
 const port = process.env.PORT || 4549;
 const mongoURI = process.env.MONGO_URI;
 
-// Initialize the app
+
 const app = express();
 
 // Middleware setup
