@@ -8,6 +8,7 @@ const app = express();
 app.use(
   cors({
     origin: [
+      "https://gadget-world-client-web.vercel.app",
       "http://localhost:5173",
       "http://localhost:5174",
       "https://gadget-world-client.vercel.app",
