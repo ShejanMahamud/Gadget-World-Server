@@ -14,9 +14,8 @@ app.use(
     ],
   })
 );
-app.use(express.json());
+app.use(express.json())
 
-// MongoDB client setup
 const client = new MongoClient(mongoURI, {
   serverApi: {
     version: ServerApiVersion.v1,
